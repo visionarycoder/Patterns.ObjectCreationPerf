@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
+using ObjectLibrary.Messaging.Base;
 
-namespace ObjectLibrary
+namespace ObjectLibrary.Factory
 {
     public static class ServiceMessageFactory_Activator<T> where T : IServiceMessage
     {

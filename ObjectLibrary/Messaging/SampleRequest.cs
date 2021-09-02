@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ObjectLibrary.Messaging.Base;
 
-namespace ObjectLibrary
+namespace ObjectLibrary.Messaging
 {
 
     public interface ISampleRequest : IServiceMessageRequest

@@ -6,6 +6,8 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Timers;
 
 using ObjectLibrary;
+using ObjectLibrary.Factory;
+using ObjectLibrary.Messaging;
 
 namespace ConsoleApp
 {
@@ -43,22 +45,5 @@ namespace ConsoleApp
         }
 
     }
-
-    //class something
-    //{
-
-    //    public SampleResponse Somethingelse(SampleRequest request)
-    //    {
-
-    //        var response = ServiceMessageFactory_New<SampleResponse>.CreateFrom(request);
-    //        var accessorRequest = ServiceMessageFactory_New<SampleRequest>.CreateFrom(request);
-    //        var accessor = 12;
-    //        var accessorResponse = accessor.SomeCall(accessorRequest);
-    //        // Do work;
-    //        return response;
-
-    //    }
-
-    //}
 
 }

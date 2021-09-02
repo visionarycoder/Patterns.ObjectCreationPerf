@@ -1,4 +1,4 @@
-﻿namespace ObjectLibrary
+﻿namespace ObjectLibrary.Messaging.Base
 {
     public abstract class ServiceMessageResponse : ServiceMessageRequest, IServiceMessageResponse
     {

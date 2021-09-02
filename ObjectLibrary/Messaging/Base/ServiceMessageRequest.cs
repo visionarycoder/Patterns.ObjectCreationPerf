@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace ObjectLibrary
+namespace ObjectLibrary.Messaging.Base
 {
     public abstract class ServiceMessageRequest : IServiceMessageRequest
     {

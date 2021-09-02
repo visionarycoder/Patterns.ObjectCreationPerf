@@ -1,4 +1,6 @@
-﻿namespace ObjectLibrary
+﻿using ObjectLibrary.Messaging.Base;
+
+namespace ObjectLibrary.Messaging
 {
     public class SampleResponse : ServiceMessageResponse
     {
