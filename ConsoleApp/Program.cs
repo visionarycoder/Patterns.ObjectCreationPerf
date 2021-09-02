@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.Linq;
-using ObjectLibrary.Factory;
-using ObjectLibrary.Messaging;
 
 namespace ConsoleApp
 {
@@ -35,20 +32,4 @@ namespace ConsoleApp
         }
 
     }
-
-    public class Widget
-    {
-        private static int id = 0;
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public SqlMoney Price { get; set; }
-
-        public Widget()
-        {
-            Id = id++;
-        }
-    }
-
-
-
 }
