@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Diagnostics;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
-using System.Timers;
-
-using ObjectLibrary;
 using ObjectLibrary.Factory;
 using ObjectLibrary.Messaging;
 
@@ -24,20 +20,14 @@ namespace ConsoleApp
                 var stopwatch = Stopwatch.StartNew();
                 foreach (var _ in Enumerable.Range(0, range))
                 {
-                    var sampleRequest = ServiceMessageFactory_Activator<SampleRequest>.Create();
-                    var sampleResponse = ServiceMessageFactory_Activator<SampleResponse>.CreateFrom(sampleRequest);
-                    sampleRequest = null;
-                    sampleResponse = null;
+                    var widget = Activator.CreateInstance<Widget>();
                 }
                 Console.WriteLine($"Activator {range:#,0} => {stopwatch.Elapsed}");
 
                 stopwatch.Restart();
                 foreach (var _ in Enumerable.Range(0, range))
                 {
-                    var sampleRequest = ServiceMessageFactory_New<SampleRequest>.Create();
-                    var sampleResponse = ServiceMessageFactory_New<SampleResponse>.CreateFrom(sampleRequest);
-                    sampleRequest = null;
-                    sampleResponse = null;
+                    var widget = new Widget();
                 }
                 Console.WriteLine($"New       {range:#,0} => {stopwatch.Elapsed}");
             }
@@ -45,5 +35,20 @@ namespace ConsoleApp
         }
 
     }
+
+    public class Widget
+    {
+        private static int id = 0;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public SqlMoney Price { get; set; }
+
+        public Widget()
+        {
+            Id = id++;
+        }
+    }
+
+
 
 }
