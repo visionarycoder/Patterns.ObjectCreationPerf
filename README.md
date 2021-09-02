@@ -5,7 +5,9 @@ I had one of my peers question my habit of using Activator.CreateInstance<T>(). 
 Below are the results on my work issued laptop.
   
 ---
+  
 |Method    |Item Count  |Duration        |
+|----------|------------|----------------|
 |Activator |      1,000 |00:00:00.0340841|
 |New       |      1,000 |00:00:00.0000697|
 |Activator |     10,000 |00:00:00.0007947|
