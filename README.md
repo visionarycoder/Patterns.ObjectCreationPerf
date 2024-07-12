@@ -35,6 +35,7 @@ Below are the results on my work issued laptop.
 |   100,000,000 |  0.271 | New           |
 | 1,000,000,000 |  0.669 | New           |
 
+new() is faster than Activator.CreateInstance<T>() for all counts.  I hadn't expected that, but facts are facts.
 
 ## ChangeLog:
 Upgraded to .Net 8
