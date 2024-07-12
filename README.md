@@ -1,4 +1,4 @@
-# Object-Creation-Performance-Comparison
+# Object Creation Performance Comparison
 
 I had one of my peers question my habit of using Activator.CreateInstance<T>().  To see where things are at when using .Net 5, I wrote up a quick app to compare different object creation models.
 
