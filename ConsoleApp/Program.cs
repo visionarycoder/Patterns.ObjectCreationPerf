@@ -11,7 +11,7 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
 
-            foreach (var range in new[] { 1_000, 10_000, 100_000, 1_000_000, 10_000_000, 100_000_000 })
+            foreach (var range in new[] { 1_000, 10_000, 100_000, 1_000_000, 10_000_000, 100_000_000, 1_000_000_000 })
             {
 
                 var stopwatch = Stopwatch.StartNew();
@@ -28,6 +28,9 @@ namespace ConsoleApp
                 }
                 Console.WriteLine($"New       {range:#,0} => {stopwatch.Elapsed}");
             }
+
+            Console.WriteLine("Finished! Press any key to exit.");
+            Console.ReadLine();
 
         }
 
