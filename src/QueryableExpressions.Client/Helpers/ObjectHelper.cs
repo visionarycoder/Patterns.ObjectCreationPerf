@@ -1,13 +1,16 @@
-using System.Diagnostics;
 using QueryableExpressions.Client.Filtering;
+
 using Shared.Objects.Base;
+
+using System.Diagnostics;
 
 namespace QueryableExpressions.Client.Helpers
 {
-    public static class ObjectRunner
+    public static class ObjectHelper
     {
-        private static readonly Stopwatch stopwatch = new Stopwatch();
-        private static readonly Random random = new Random();
+
+        private static readonly Stopwatch stopwatch = new();
+        private static readonly Random random = new();
 
         public static TimeSpan RunObject<T>(List<T> data, ApplyFilterDelegate<T> applyFilter) where T : ObjectBase
         {

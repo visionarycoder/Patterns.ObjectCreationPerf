@@ -91,7 +91,7 @@ internal static class FilterExtensions
             return query;
         }
 
-        if (typeof(Entity).IsAssignableFrom(typeof(T)))
+        if (typeof(EntityBase).IsAssignableFrom(typeof(T)))
         {
             foreach (var kvp in filter.PropertyValues)
             {

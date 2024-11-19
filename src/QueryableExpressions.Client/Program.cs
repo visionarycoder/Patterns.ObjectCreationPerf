@@ -17,43 +17,43 @@ internal class Program
             {
                 var data = new List<Entity2>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
 
             {
                 var data = new List<Entity4>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
 
             {
                 var data = new List<Entity8>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, EntityRunner.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, EntityHelper.RunEntity(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
 
             {
                 var data = new List<Object2>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
 
             {
                 var data = new List<Object4>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
 
             {
                 var data = new List<Object8>();
                 data.CreateDataset(count);
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
-                list.Add((Helper.GetEntityType(data), count, ObjectRunner.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.ChatGPT.FilterExtensions.ApplyFilter)));
+                list.Add((Helper.GetEntityType(data), count, ObjectHelper.RunObject(data, QueryableExpressions.Client.Filtering.CoPilot.FilterExtensions.ApplyFilter)));
             }
         }
 

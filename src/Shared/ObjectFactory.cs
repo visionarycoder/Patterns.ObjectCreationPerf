@@ -5,7 +5,7 @@ namespace Shared;
 public static class ObjectFactory
 {
 
-    private static readonly Random random = new Random();
+    private static readonly Random random = new();
 
     public static void CreateDataset(this List<Object2> list, int count)
     {

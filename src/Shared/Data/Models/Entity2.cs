@@ -1,9 +1,8 @@
-﻿#pragma warning disable CS8618, CS9264
-using Shared.Data.Base;
+﻿using Shared.Data.Base;
 
 namespace Shared.Data.Models;
 
-public class Entity2(int id, string name) : Entity
+public class Entity2(int id, string name) : EntityBase(id,name)
 {
     public override string ToString()
     {

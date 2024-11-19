@@ -5,7 +5,7 @@ namespace Shared;
 public static class EntityFactory
 {
 
-    private static readonly Random random = new Random();
+    private static readonly Random random = new();
 
     public static void CreateDataset(this List<Entity2> list, int count)
     {

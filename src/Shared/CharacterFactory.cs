@@ -3,7 +3,7 @@
 internal static class CharacterFactory
 {
 
-    private static readonly Random random = new Random();
+    private static readonly Random random = new();
     private const string CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     public static string GenerateRandomString(int length)

@@ -39,7 +39,7 @@ public static class FilterExtensions
             return query;
         }
 
-        if (typeof(Entity).IsAssignableFrom(typeof(T)))
+        if (typeof(EntityBase).IsAssignableFrom(typeof(T)))
         {
             foreach (var (propertyName, value) in filter.PropertyValues)
             {
